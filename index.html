@@ -14,31 +14,30 @@
                     var numA = Math.floor(Math.random() * 9) + 1;
                     var numB = Math.floor(Math.random() * 9) + 1;
                     var numC = numA + numB;
+                    var questions = Array(1, 2, 3);
+                    var question = questions[Math.floor(Math.random() * items.length)];
 
 
                     //Selecting three random type of the problem
-                    for (j = 0; j < 1; j++) {
-
-                        var problem = Math.floor(Math.random() * 3);
-
-                        //A+X=C
-                        if (problem = 1) {
-
-                            document.write(numA + "+X=" + numC + "<br/>");
 
 
-                            //X+B=C
-                        } else if (problem = 2) {
-                            document.write("X+" + numB + "=" + numC + "<br/>");
+                    //A+X=C
+                    if (question = 1) {
 
-                            //A+B=X
-                        } else {
+                        document.write(numA + "+X=" + numC + "<br/>");
 
 
+                        //X+B=C
+                    } else if (question = 2) {
+                        document.write("X+" + numB + "=" + numC + "<br/>");
 
-                        }
-
-                    }//End of one problem
+                        //A+B=X
+                    } else if (question = 3) {
+                        document.write("X+" + numB + "=" + numC + "<br/>");
+                    }
+                    else {
+                        document.write("ERROR");
+                    }
 
 
 
