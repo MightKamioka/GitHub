@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("button").click(function() {
-        var correctAns = 0;
-        var wrongAns = 0;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var correctAns = 0;
+                var wrongAns = 0;
 
 
-        for (i = 0; i < 10; i++) {
-          //Generating Random Number
-          var numA = Math.floor(Math.random() * 9) + 1;
-          var numB = Math.floor(Math.random() * 9) + 1;
-          var numC = numA + numB;
+                for (i = 0; i < 10; i++) {
+                    //Generating Random Number
+                    var numA = Math.floor(Math.random() * 9) + 1;
+                    var numB = Math.floor(Math.random() * 9) + 1;
+                    var numC = numA + numB;
 
 
-          //Selecting three random type of the problem
-          var problem = Math.floor(Math.random() * 3) + 1;
+                    //Selecting three random type of the problem
+                    for (j = 0; j < 1; j++) {
 
-          //A+X=C
-          if (problem = 1) {
+                        var problem = Math.floor(Math.random() * 3);
 
-            document.write(numA + "+X=" + numC + "<br/>");
+                        //A+X=C
+                        if (problem = 1) {
 
-
-            //X+B=C
-          } else if (problem = 2) {
-            document.write("X+" + numB + "=" + numC + "<br/>");
-
-            //A+B=X
-          } else {
+                            document.write(numA + "+X=" + numC + "<br/>");
 
 
+                            //X+B=C
+                        } else if (problem = 2) {
+                            document.write("X+" + numB + "=" + numC + "<br/>");
 
-          }
-
-        } //End of 10 loops
+                            //A+B=X
+                        } else {
 
 
 
+                        }
+
+                    }//End of one problem
 
 
 
 
 
-      });
-    });
-  </script>
+                } //End of 10 loops
+
+
+
+
+
+
+
+
+            });
+        });
+    </script>
 </head>
-
 <body>
-
-  <button>Start Animation</button>
-
-  <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
-
-  <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
-
+    <button>Start Animation</button>
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 </body>
-
 </html>
